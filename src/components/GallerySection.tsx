@@ -18,7 +18,9 @@ import galleryGclass3 from "@/assets/gallery-gclass-3.jpg";
 import galleryHaval from "@/assets/gallery-haval.jpg";
 import galleryHaval2 from "@/assets/gallery-haval-2.jpg";
 import galleryHaval3 from "@/assets/gallery-haval-3.jpg";
-import galleryDefender from "@/assets/gallery-defender.jpg";
+import galleryDefender1 from "@/assets/gallery-defender-1.jpg";
+import galleryDefender2 from "@/assets/gallery-defender-2.jpg";
+import galleryDefender3 from "@/assets/gallery-defender-3.jpg";
 import galleryGle from "@/assets/gallery-gle.jpg";
 
 const projects = [
