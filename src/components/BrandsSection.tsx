@@ -59,7 +59,7 @@ const BrandsSection = () => {
               <img
                 src={brand.logo}
                 alt={`Logo ${brand.name}`}
-                className="w-24 h-24 object-contain brand-logo-transparent transition-all duration-500"
+                className="w-24 h-24 object-contain"
               />
               <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest group-hover:text-foreground transition-colors duration-300">
                 {brand.name}
