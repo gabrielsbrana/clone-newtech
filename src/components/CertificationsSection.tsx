@@ -1,0 +1,91 @@
+import { useInView } from "@/hooks/useInView";
+import { Award, CheckCircle, Shield } from "lucide-react";
+import nextOneLogo from "@/assets/nextone-logo-final.png";
+
+const CertificationsSection = () => {
+  const { ref, isInView } = useInView();
+
+  return (
+    <section id="certificacoes" className="py-28 gradient-bg" ref={ref}>
+      <div className="container mx-auto px-6 max-w-4xl">
+        <div className={`text-center transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 mb-8">
+            <Award className="w-7 h-7 text-primary" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-foreground tracking-tight">
+            Certificações e <span className="text-gradient">Associações</span>
+          </h2>
+        </div>
+
+        <div className={`space-y-5 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          {/* Abralin */}
+          <div className="glass-card rounded-2xl p-8">
+            <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+              Associados à Abralin
+            </h3>
+            <p className="text-muted-foreground text-sm ml-8">
+              Associação Brasileira de Blindagem.
+            </p>
+          </div>
+
+          {/* NextOne Card */}
+          <div className="glass-card rounded-2xl overflow-hidden">
+            {/* Header com logo */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 p-8 border-b border-border/50">
+              <img
+                src={nextOneLogo}
+                alt="NextOne Performance Ballistic Products"
+                className="w-48 sm:w-56 h-auto object-contain shrink-0"
+              />
+              <div className="text-center sm:text-left">
+                <h3 className="text-lg font-bold text-foreground flex items-center gap-2 justify-center sm:justify-start">
+                  <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                  Certificado NextOne by Kevlar DuPont
+                </h3>
+                <p className="text-xs text-muted-foreground mt-1.5 tracking-wide uppercase">
+                  Certificação de qualidade e autenticidade balística
+                </p>
+              </div>
+            </div>
+
+            {/* Body */}
+            <div className="p-8">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                Garante a utilização de manta balística original de aramida Kevlar®, produzida pela DuPont, 
+                em blindagens veiculares, assegurando máxima resistência, leveza e conformidade técnica. 
+                É uma certificação de qualidade que atesta a procedência do material e a segurança da blindagem.
+              </p>
+
+              <div className="grid gap-4">
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
+                  <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Autenticidade</p>
+                    <p className="text-xs text-muted-foreground mt-1">O certificado assegura que o material é Kevlar® legítimo da DuPont, evitando o uso de aramidas alternativas menos resistentes.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
+                  <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Qualidade e Segurança</p>
+                    <p className="text-xs text-muted-foreground mt-1">A manta Kevlar® é conhecida por ser extremamente leve e resistente, proporcionando proteção superior contra disparos e impactos.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
+                  <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Aplicações</p>
+                    <p className="text-xs text-muted-foreground mt-1">A NextOne utiliza essa tecnologia em suas soluções de proteção balística, garantindo alto padrão e conformidade com normas técnicas. A NewTech utiliza essa tecnologia em suas blindagens veiculares.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CertificationsSection;

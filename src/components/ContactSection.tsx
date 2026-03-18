@@ -1,0 +1,83 @@
+import { useInView } from "@/hooks/useInView";
+import { MapPin, Phone, MessageCircle, Instagram } from "lucide-react";
+
+const ContactSection = () => {
+  const { ref, isInView } = useInView();
+
+  return (
+    <section id="contato" className="py-28 gradient-bg" ref={ref}>
+      <div className="container mx-auto px-6 max-w-4xl">
+        <div className={`text-center transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-14 text-foreground tracking-tight">
+            Entre em <span className="text-gradient">Contato</span>
+          </h2>
+        </div>
+
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 mb-14 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="glass-card rounded-xl p-6 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
+              <MapPin className="w-5 h-5 text-primary" />
+            </div>
+            <div>
+              <p className="font-semibold text-foreground text-sm mb-1">Endereço</p>
+              <p className="text-muted-foreground text-xs leading-relaxed">Av. Vicente de Castro, 6270 - Cais do Porto, Fortaleza-CE</p>
+            </div>
+          </div>
+
+          <div className="glass-card rounded-xl p-6 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
+              <Phone className="w-5 h-5 text-primary" />
+            </div>
+            <div>
+              <p className="font-semibold text-foreground text-sm mb-1">Telefone</p>
+              <p className="text-muted-foreground text-xs">(85) 3248-6633</p>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/5585989578441"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-card rounded-xl p-6 flex items-start gap-4"
+          >
+            <div className="w-10 h-10 rounded-xl bg-[#25D366]/10 border border-[#25D366]/20 flex items-center justify-center shrink-0">
+              <MessageCircle className="w-5 h-5 text-[#25D366]" />
+            </div>
+            <div>
+              <p className="font-semibold text-foreground text-sm mb-1">WhatsApp</p>
+              <p className="text-muted-foreground text-xs">(85) 98957-8441</p>
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/newtechblindagens/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-card rounded-xl p-6 flex items-start gap-4"
+          >
+            <div className="w-10 h-10 rounded-xl bg-[#E1306C]/10 border border-[#E1306C]/20 flex items-center justify-center shrink-0">
+              <Instagram className="w-5 h-5 text-[#E1306C]" />
+            </div>
+            <div>
+              <p className="font-semibold text-foreground text-sm mb-1">Instagram</p>
+              <p className="text-muted-foreground text-xs">@newtechblindagens</p>
+            </div>
+          </a>
+        </div>
+
+        <div className={`text-center transition-all duration-1000 delay-300 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <a
+            href="https://wa.me/5585989578441?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20blindagem%20automotiva."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-10 py-4 rounded-xl text-base transition-all duration-300 hover:scale-105 shadow-xl shadow-primary/20"
+          >
+            Solicite um Orçamento
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
