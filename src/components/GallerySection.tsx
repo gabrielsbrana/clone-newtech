@@ -46,7 +46,7 @@ const projects = [
   },
   {
     caption: "Land Rover Defender Blindado Nível III-A",
-    images: [galleryDefender],
+    images: [galleryDefender1, galleryDefender2, galleryDefender3],
   },
 ];
 
