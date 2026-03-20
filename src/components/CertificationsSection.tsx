@@ -42,7 +42,7 @@ const CertificationsSection = () => {
                 className="w-48 sm:w-56 h-auto object-contain shrink-0"
               />
               <div className="text-center sm:text-left">
-                <h3 className="text-lg font-bold text-foreground flex items-center gap-2 justify-center sm:justify-start">
+                <h3 className="text-xl font-semibold text-white flex items-center gap-2 justify-center sm:justify-start antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
                   <CheckCircle className="w-5 h-5 text-primary shrink-0" />
                   Certificado NextOne by Kevlar DuPont
                 </h3>
