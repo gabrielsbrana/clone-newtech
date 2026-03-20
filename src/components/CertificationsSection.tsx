@@ -3,6 +3,7 @@ import { Award, CheckCircle, Shield } from "lucide-react";
 import nextOneLogo from "@/assets/nextone-logo-final.png";
 import dupontLogo from "@/assets/dupont-logo.png";
 import kevlarLogo from "@/assets/kevlar-logo.png";
+import seloPremium from "@/assets/selo-premium.png";
 
 const CertificationsSection = () => {
   const { ref, isInView } = useInView();
