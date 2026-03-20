@@ -74,9 +74,14 @@ const CertificationsSection = () => {
                 </div>
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
                   <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-sm font-semibold text-foreground">Qualidade e Segurança</p>
-                    <p className="text-xs text-muted-foreground mt-1">A manta Kevlar® é conhecida por ser extremamente leve e resistente, proporcionando proteção superior contra disparos e impactos.</p>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <p className="text-sm font-semibold text-foreground">Qualidade e Segurança</p>
+                        <p className="text-xs text-muted-foreground mt-1">A manta Kevlar® é conhecida por ser extremamente leve e resistente, proporcionando proteção superior contra disparos e impactos.</p>
+                      </div>
+                      <img src={kevlarLogo} alt="Logo Kevlar" className="w-[140px] h-auto object-contain shrink-0" />
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
