@@ -19,7 +19,7 @@ const MaterialsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-5 text-foreground tracking-tight">
             Materiais de <span className="text-gradient">Alta Tecnologia</span>
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-14 leading-relaxed">
+          <p className="text-sm md:text-base font-medium text-white max-w-2xl mx-auto mb-14 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
             Trabalhamos com materiais de qualidade comprovada, pensados para oferecer segurança 
             sem comprometer conforto e desempenho.
           </p>
@@ -36,7 +36,7 @@ const MaterialsSection = () => {
               </div>
               <div>
                 <span className="font-semibold text-foreground text-sm">{name}</span>
-                <p className="text-xs text-muted-foreground mt-1">{desc}</p>
+                <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>{desc}</p>
               </div>
             </div>
           ))}
