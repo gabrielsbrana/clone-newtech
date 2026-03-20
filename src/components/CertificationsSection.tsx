@@ -62,9 +62,14 @@ const CertificationsSection = () => {
               <div className="grid gap-4">
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
                   <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-sm font-semibold text-foreground">Autenticidade</p>
-                    <p className="text-xs text-muted-foreground mt-1">O certificado assegura que o material é Kevlar® legítimo da DuPont, evitando o uso de aramidas alternativas menos resistentes.</p>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <p className="text-sm font-semibold text-foreground">Autenticidade</p>
+                        <p className="text-xs text-muted-foreground mt-1">O certificado assegura que o material é Kevlar® legítimo da DuPont, evitando o uso de aramidas alternativas menos resistentes.</p>
+                      </div>
+                      <img src={dupontLogo} alt="Logo DuPont" className="w-[140px] h-auto object-contain shrink-0" />
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
