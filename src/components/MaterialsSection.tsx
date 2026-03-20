@@ -35,7 +35,7 @@ const MaterialsSection = () => {
                 <Icon className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <span className="font-semibold text-foreground text-sm">{name}</span>
+                <span className="font-semibold text-white text-base antialiased" style={{ letterSpacing: '0.5px' }}>{name}</span>
                 <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>{desc}</p>
               </div>
             </div>

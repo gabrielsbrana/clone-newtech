@@ -88,7 +88,7 @@ const CertificationsSection = () => {
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
                   <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-semibold text-foreground">Aplicações</p>
+                    <p className="text-base font-semibold text-white antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px' }}>Aplicações</p>
                     <p className="text-sm font-medium text-white mt-1 leading-relaxed tracking-wide antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>Tecnologia aplicada com excelência: a NextOne em proteção balística certificada e a NewTech em blindagens veiculares de alto desempenho.</p>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ const HeroSection = () => {
         </div>
 
         <div className="animate-fade-up-delay-1">
-          <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed tracking-tight">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-12 max-w-2xl mx-auto antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Onde a inovação protege vidas
           </p>
         </div>
