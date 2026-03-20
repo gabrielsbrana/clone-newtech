@@ -29,8 +29,8 @@ const ContactSection = () => {
               <Phone className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">Telefone</p>
-              <p className="text-muted-foreground text-xs">(85) 3248-6633</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">Telefone</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>(85) 3248-6633</p>
             </div>
           </div>
 
