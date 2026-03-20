@@ -16,7 +16,7 @@ const MaterialsSection = () => {
     <section id="materiais" className="py-28 gradient-section" ref={ref}>
       <div className="container mx-auto px-6 max-w-5xl">
         <div className={`text-center transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl md:text-4xl font-bold mb-5 text-foreground tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-5 text-white tracking-tight antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Materiais de <span className="text-gradient">Alta Tecnologia</span>
           </h2>
           <p className="text-sm md:text-base font-medium text-white max-w-2xl mx-auto mb-14 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>

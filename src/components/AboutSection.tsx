@@ -22,7 +22,7 @@ const AboutSection = () => {
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 mb-8">
             <Shield className="w-7 h-7 text-primary" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white tracking-tight antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Quem <span className="text-gradient">Somos</span>
           </h2>
           <p className="text-sm md:text-base font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
