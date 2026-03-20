@@ -61,7 +61,7 @@ const BrandsSection = () => {
                 alt={`Logo ${brand.name}`}
                 className="w-24 h-24 object-contain"
               />
-              <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest group-hover:text-foreground transition-colors duration-300">
+              <span className="text-xs font-medium text-white uppercase tracking-widest antialiased group-hover:text-primary transition-colors duration-300" style={{ letterSpacing: '0.4px', lineHeight: '1.5' }}>
                 {brand.name}
               </span>
             </div>
