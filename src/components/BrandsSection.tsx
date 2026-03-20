@@ -44,7 +44,7 @@ const BrandsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-5 text-foreground tracking-tight">
             Veículos que <span className="text-gradient">Blindamos</span>
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-14 leading-relaxed">
+          <p className="text-sm md:text-base font-medium text-white max-w-2xl mx-auto mb-14 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
             Blindamos veículos das principais montadoras do mercado, sempre preservando originalidade, 
             conforto e desempenho.
           </p>
@@ -61,7 +61,7 @@ const BrandsSection = () => {
                 alt={`Logo ${brand.name}`}
                 className="w-24 h-24 object-contain"
               />
-              <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest group-hover:text-foreground transition-colors duration-300">
+              <span className="text-xs font-medium text-white uppercase tracking-widest antialiased group-hover:text-primary transition-colors duration-300" style={{ letterSpacing: '0.4px', lineHeight: '1.5' }}>
                 {brand.name}
               </span>
             </div>
