@@ -53,7 +53,7 @@ const CertificationsSection = () => {
 
             {/* Body */}
             <div className="p-8">
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              <p className="text-sm font-medium text-white mb-6 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
                 Garante a utilização de manta balística original de aramida Kevlar®, produzida pela DuPont, 
                 em blindagens veiculares, assegurando máxima resistência, leveza e conformidade técnica. 
                 É uma certificação de qualidade que atesta a procedência do material e a segurança da blindagem.
