@@ -22,14 +22,21 @@ const CertificationsSection = () => {
 
         <div className={`space-y-5 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Abralin */}
-          <div className="glass-card rounded-2xl p-8">
-            <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-              Associados à Abralin
-            </h3>
-            <p className="text-sm font-medium text-white ml-8 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
-              Associação Brasileira de Blindagem.
-            </p>
+          <div className="glass-card rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                Associados à Abralin
+              </h3>
+              <p className="text-sm font-medium text-white ml-8 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
+                Associação Brasileira de Blindagem.
+              </p>
+            </div>
+            <img
+              src={abralinLogo}
+              alt="Logo Abralin"
+              className="h-12 w-auto object-contain shrink-0 rounded p-1 sm:mt-0 mt-3"
+            />
           </div>
 
           {/* NextOne Card */}
