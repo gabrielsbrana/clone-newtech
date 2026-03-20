@@ -25,13 +25,13 @@ const AboutSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground tracking-tight">
             Quem <span className="text-gradient">Somos</span>
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+          <p className="text-sm md:text-base font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
             Somos a New Tech Blindagens, uma empresa especializada em blindagem automotiva de alto padrão, 
             movida por tecnologia, precisão e compromisso com a vida. Atuamos com materiais de última geração 
             e processos rigorosos, garantindo proteção nível III-A com acabamento impecável, preservando o 
             conforto, a originalidade e o desempenho de cada veículo.
           </p>
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed mt-6">
+          <p className="text-sm md:text-base font-medium text-white mt-6 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
             Mais do que blindar carros, protegemos histórias, famílias e trajetos. Acreditamos que segurança 
             é investimento em tranquilidade — e que excelência não é diferencial, é obrigação. Na New Tech, 
             inovação e confiança andam juntas. Porque proteger o que é mais importante sempre será a nossa prioridade.
