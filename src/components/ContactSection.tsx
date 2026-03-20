@@ -19,8 +19,8 @@ const ContactSection = () => {
               <MapPin className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">Endereço</p>
-              <p className="text-muted-foreground text-xs leading-relaxed">Av. Vicente de Castro, 6270 - Cais do Porto, Fortaleza-CE</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">Endereço</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>Av. Vicente de Castro, 6270 - Cais do Porto, Fortaleza-CE</p>
             </div>
           </div>
 
