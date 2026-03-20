@@ -45,7 +45,7 @@ const CertificationsSection = () => {
                   <CheckCircle className="w-5 h-5 text-primary shrink-0" />
                   Certificado NextOne by Kevlar DuPont
                 </h3>
-                <p className="text-xs text-muted-foreground mt-1.5 tracking-wide uppercase">
+                <p className="text-sm font-medium text-white mt-1.5 tracking-wide uppercase antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
                   Certificação de qualidade e autenticidade balística
                 </p>
               </div>
