@@ -26,7 +26,7 @@ const CertificationsSection = () => {
               <CheckCircle className="w-5 h-5 text-primary shrink-0" />
               Associados à Abralin
             </h3>
-            <p className="text-muted-foreground text-sm ml-8">
+            <p className="text-sm font-medium text-white ml-8 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
               Associação Brasileira de Blindagem.
             </p>
           </div>
