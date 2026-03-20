@@ -26,7 +26,7 @@ const CertificationsSection = () => {
               <CheckCircle className="w-5 h-5 text-primary shrink-0" />
               Associados à Abralin
             </h3>
-            <p className="text-muted-foreground text-sm ml-8">
+            <p className="text-sm font-medium text-white ml-8 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
               Associação Brasileira de Blindagem.
             </p>
           </div>
@@ -45,7 +45,7 @@ const CertificationsSection = () => {
                   <CheckCircle className="w-5 h-5 text-primary shrink-0" />
                   Certificado NextOne by Kevlar DuPont
                 </h3>
-                <p className="text-xs text-muted-foreground mt-1.5 tracking-wide uppercase">
+                <p className="text-sm font-medium text-white mt-1.5 tracking-wide uppercase antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
                   Certificação de qualidade e autenticidade balística
                 </p>
               </div>
@@ -53,7 +53,7 @@ const CertificationsSection = () => {
 
             {/* Body */}
             <div className="p-8">
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              <p className="text-sm font-medium text-white mb-6 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
                 Garante a utilização de manta balística original de aramida Kevlar®, produzida pela DuPont, 
                 em blindagens veiculares, assegurando máxima resistência, leveza e conformidade técnica. 
                 É uma certificação de qualidade que atesta a procedência do material e a segurança da blindagem.
@@ -66,7 +66,7 @@ const CertificationsSection = () => {
                     <div className="flex items-center justify-between gap-4">
                       <div>
                         <p className="text-sm font-semibold text-foreground">Autenticidade</p>
-                        <p className="text-xs text-muted-foreground mt-1">O certificado assegura que o material é Kevlar® legítimo da DuPont, evitando o uso de aramidas alternativas menos resistentes.</p>
+                        <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>O certificado assegura que o material é Kevlar® legítimo da DuPont, evitando o uso de aramidas alternativas menos resistentes.</p>
                       </div>
                       <img src={dupontLogo} alt="Logo DuPont" className="w-[140px] h-auto object-contain shrink-0" />
                     </div>
@@ -78,7 +78,7 @@ const CertificationsSection = () => {
                     <div className="flex items-center justify-between gap-4">
                       <div>
                         <p className="text-sm font-semibold text-foreground">Qualidade e Segurança</p>
-                        <p className="text-xs text-muted-foreground mt-1">A manta Kevlar® é conhecida por ser extremamente leve e resistente, proporcionando proteção superior contra disparos e impactos.</p>
+                        <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>A manta Kevlar® é conhecida por ser extremamente leve e resistente, proporcionando proteção superior contra disparos e impactos.</p>
                       </div>
                       <img src={kevlarLogo} alt="Logo Kevlar" className="w-[140px] h-auto object-contain shrink-0" />
                     </div>
