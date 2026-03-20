@@ -15,7 +15,7 @@ const CertificationsSection = () => {
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 mb-8">
             <Award className="w-7 h-7 text-primary" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-foreground tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-10 text-white tracking-tight antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Certificações e <span className="text-gradient">Associações</span>
           </h2>
         </div>
@@ -23,7 +23,7 @@ const CertificationsSection = () => {
         <div className={`space-y-5 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Abralin */}
           <div className="glass-card rounded-2xl p-8">
-            <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-3">
+            <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-3 antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
               <CheckCircle className="w-5 h-5 text-primary shrink-0" />
               Associados à Abralin
             </h3>
@@ -42,7 +42,7 @@ const CertificationsSection = () => {
                 className="w-48 sm:w-56 h-auto object-contain shrink-0"
               />
               <div className="text-center sm:text-left">
-                <h3 className="text-lg font-bold text-foreground flex items-center gap-2 justify-center sm:justify-start">
+                <h3 className="text-xl font-semibold text-white flex items-center gap-2 justify-center sm:justify-start antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
                   <CheckCircle className="w-5 h-5 text-primary shrink-0" />
                   Certificado NextOne by Kevlar DuPont
                 </h3>
@@ -66,7 +66,7 @@ const CertificationsSection = () => {
                   <div className="flex-1">
                     <div className="flex items-center justify-between gap-4">
                       <div>
-                        <p className="text-sm font-semibold text-foreground">Autenticidade</p>
+                        <p className="text-base font-semibold text-white antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px' }}>Autenticidade</p>
                         <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>O certificado assegura que o material é Kevlar® legítimo da DuPont, evitando o uso de aramidas alternativas menos resistentes.</p>
                       </div>
                       <img src={dupontLogo} alt="Logo DuPont" className="w-[140px] h-auto object-contain shrink-0" />
@@ -78,7 +78,7 @@ const CertificationsSection = () => {
                   <div className="flex-1">
                     <div className="flex items-center justify-between gap-4">
                       <div>
-                        <p className="text-sm font-semibold text-foreground">Qualidade e Segurança</p>
+                        <p className="text-base font-semibold text-white antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px' }}>Qualidade e Segurança</p>
                         <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>A manta Kevlar® é conhecida por ser extremamente leve e resistente, proporcionando proteção superior contra disparos e impactos.</p>
                       </div>
                       <img src={kevlarLogo} alt="Logo Kevlar" className="w-[140px] h-auto object-contain shrink-0" />
@@ -88,7 +88,7 @@ const CertificationsSection = () => {
                 <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/[0.03] border border-primary/10">
                   <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-semibold text-foreground">Aplicações</p>
+                    <p className="text-base font-semibold text-white antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px' }}>Aplicações</p>
                     <p className="text-sm font-medium text-white mt-1 leading-relaxed tracking-wide antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>Tecnologia aplicada com excelência: a NextOne em proteção balística certificada e a NewTech em blindagens veiculares de alto desempenho.</p>
                   </div>
                 </div>

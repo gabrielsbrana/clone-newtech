@@ -8,7 +8,7 @@ const ContactSection = () => {
     <section id="contato" className="py-28 gradient-bg" ref={ref}>
       <div className="container mx-auto px-6 max-w-4xl">
         <div className={`text-center transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl md:text-4xl font-bold mb-14 text-foreground tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-14 text-white tracking-tight antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Entre em <span className="text-gradient">Contato</span>
           </h2>
         </div>
