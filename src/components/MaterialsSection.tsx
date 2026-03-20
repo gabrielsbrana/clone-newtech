@@ -36,7 +36,7 @@ const MaterialsSection = () => {
               </div>
               <div>
                 <span className="font-semibold text-foreground text-sm">{name}</span>
-                <p className="text-xs text-muted-foreground mt-1">{desc}</p>
+                <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>{desc}</p>
               </div>
             </div>
           ))}
