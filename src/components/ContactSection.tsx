@@ -19,8 +19,8 @@ const ContactSection = () => {
               <MapPin className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">Endereço</p>
-              <p className="text-muted-foreground text-xs leading-relaxed">Av. Vicente de Castro, 6270 - Cais do Porto, Fortaleza-CE</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">Endereço</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>Av. Vicente de Castro, 6270 - Cais do Porto, Fortaleza-CE</p>
             </div>
           </div>
 
@@ -29,8 +29,8 @@ const ContactSection = () => {
               <Phone className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">Telefone</p>
-              <p className="text-muted-foreground text-xs">(85) 3248-6633</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">Telefone</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>(85) 3248-6633</p>
             </div>
           </div>
 
@@ -44,8 +44,8 @@ const ContactSection = () => {
               <MessageCircle className="w-5 h-5 text-[#25D366]" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">WhatsApp</p>
-              <p className="text-muted-foreground text-xs">(85) 98957-8441</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">WhatsApp</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>(85) 98957-8441</p>
             </div>
           </a>
 
@@ -59,8 +59,8 @@ const ContactSection = () => {
               <Instagram className="w-5 h-5 text-[#E1306C]" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">Instagram</p>
-              <p className="text-muted-foreground text-xs">@newtechblindagens</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">Instagram</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>@newtechblindagens</p>
             </div>
           </a>
         </div>
