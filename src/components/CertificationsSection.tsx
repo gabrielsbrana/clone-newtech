@@ -88,7 +88,7 @@ const CertificationsSection = () => {
                   <Shield className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">Aplicações</p>
-                    <p className="text-xs text-muted-foreground mt-1">A NextOne utiliza essa tecnologia em suas soluções de proteção balística, garantindo alto padrão e conformidade com normas técnicas. A NewTech utiliza essa tecnologia em suas blindagens veiculares.</p>
+                    <p className="text-xs text-muted-foreground mt-1">Tecnologia aplicada com excelência: a NextOne em proteção balística certificada e a NewTech em blindagens veiculares de alto desempenho.</p>
                   </div>
                 </div>
               </div>
