@@ -44,8 +44,8 @@ const ContactSection = () => {
               <MessageCircle className="w-5 h-5 text-[#25D366]" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">WhatsApp</p>
-              <p className="text-muted-foreground text-xs">(85) 98957-8441</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">WhatsApp</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>(85) 98957-8441</p>
             </div>
           </a>
 
