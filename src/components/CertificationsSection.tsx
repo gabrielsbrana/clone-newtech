@@ -3,7 +3,6 @@ import { Award, CheckCircle, Shield } from "lucide-react";
 import nextOneLogo from "@/assets/nextone-logo-final.png";
 import dupontLogo from "@/assets/dupont-logo.png";
 import kevlarLogo from "@/assets/kevlar-logo.png";
-import seloPremium from "@/assets/selo-premium.png";
 
 const CertificationsSection = () => {
   const { ref, isInView } = useInView();
@@ -91,19 +90,7 @@ const CertificationsSection = () => {
                     <p className="text-sm font-semibold text-foreground">Aplicações</p>
                     <p className="text-xs text-muted-foreground mt-1">A NextOne utiliza essa tecnologia em suas soluções de proteção balística, garantindo alto padrão e conformidade com normas técnicas. A NewTech utiliza essa tecnologia em suas blindagens veiculares.</p>
                   </div>
-              </div>
-
-              {/* Selo Satisfação Completa */}
-              <div className="flex flex-col items-center gap-3.5 mt-10 pb-2">
-                <img
-                  src={seloPremium}
-                  alt="Selo Premium Quality - Satisfação Completa"
-                  className="w-[150px] h-auto"
-                />
-                <p className="text-[1.6rem] font-extrabold text-foreground tracking-tight">
-                  Satisfação Completa
-                </p>
-              </div>
+                </div>
               </div>
             </div>
           </div>
