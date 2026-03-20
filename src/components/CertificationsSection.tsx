@@ -66,7 +66,7 @@ const CertificationsSection = () => {
                   <div className="flex-1">
                     <div className="flex items-center justify-between gap-4">
                       <div>
-                        <p className="text-sm font-semibold text-foreground">Autenticidade</p>
+                        <p className="text-base font-semibold text-white antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px' }}>Autenticidade</p>
                         <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>O certificado assegura que o material é Kevlar® legítimo da DuPont, evitando o uso de aramidas alternativas menos resistentes.</p>
                       </div>
                       <img src={dupontLogo} alt="Logo DuPont" className="w-[140px] h-auto object-contain shrink-0" />
