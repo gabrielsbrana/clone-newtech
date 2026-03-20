@@ -59,8 +59,8 @@ const ContactSection = () => {
               <Instagram className="w-5 h-5 text-[#E1306C]" />
             </div>
             <div>
-              <p className="font-semibold text-foreground text-sm mb-1">Instagram</p>
-              <p className="text-muted-foreground text-xs">@newtechblindagens</p>
+              <p className="font-semibold text-white text-sm mb-1 antialiased">Instagram</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>@newtechblindagens</p>
             </div>
           </a>
         </div>
