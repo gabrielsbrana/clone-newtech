@@ -23,7 +23,7 @@ const CertificationsSection = () => {
         <div className={`space-y-5 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Abralin */}
           <div className="glass-card rounded-2xl p-8">
-            <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-3">
+            <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-3 antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
               <CheckCircle className="w-5 h-5 text-primary shrink-0" />
               Associados à Abralin
             </h3>
