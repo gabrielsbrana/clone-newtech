@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 text-center pt-6 md:pt-8">
+      <div className="relative z-10 container mx-auto px-6 text-center pt-28 md:pt-32">
         <div className="animate-fade-up flex justify-center mb-2 md:mb-3">
           <Logo className="h-12 md:h-14 lg:h-16 w-auto" />
         </div>
