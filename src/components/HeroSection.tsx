@@ -16,13 +16,13 @@ const HeroSection = () => {
         <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 text-center pt-12 md:pt-16">
-        <div className="animate-fade-up flex justify-center mb-6 md:mb-8">
-          <Logo className="h-16 md:h-20 lg:h-24 w-auto" />
+      <div className="relative z-10 container mx-auto px-6 text-center pt-6 md:pt-8">
+        <div className="animate-fade-up flex justify-center mb-2 md:mb-3">
+          <Logo className="h-12 md:h-14 lg:h-16 w-auto" />
         </div>
 
         <div className="animate-fade-up-delay-1">
-          <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white max-w-2xl mx-auto antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
+          <p className="text-base md:text-lg lg:text-xl font-semibold text-white max-w-2xl mx-auto antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
             Onde a inovação protege vidas
           </p>
         </div>
