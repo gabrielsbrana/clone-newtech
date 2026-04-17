@@ -54,14 +54,14 @@ const BrandsSection = () => {
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="glass-card rounded-xl p-5 flex flex-col items-center justify-center gap-3 group cursor-default"
+              className="aspect-square rounded-2xl bg-[hsl(220_25%_8%)]/60 border border-white/5 p-6 flex flex-col items-center justify-center gap-4 group cursor-default transition-colors duration-300 hover:border-primary/30"
             >
               <img
                 src={brand.logo}
                 alt={`Logo ${brand.name}`}
-                className="w-24 h-24 object-contain"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain"
               />
-              <span className="text-xs font-medium text-white uppercase tracking-widest antialiased group-hover:text-primary transition-colors duration-300" style={{ letterSpacing: '0.4px', lineHeight: '1.5' }}>
+              <span className="text-[11px] font-medium text-white/90 uppercase tracking-[0.15em] antialiased group-hover:text-primary transition-colors duration-300">
                 {brand.name}
               </span>
             </div>
