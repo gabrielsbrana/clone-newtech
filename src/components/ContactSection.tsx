@@ -20,7 +20,11 @@ const ContactSection = () => {
             </div>
             <div>
               <p className="font-semibold text-white text-sm mb-1 antialiased">Endereço</p>
-              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>Av. Vicente de Castro, 6270 - Cais do Porto, Fortaleza-CE</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.7' }}>
+                Av. Vicente de Castro, 6270
+                <br />
+                Cais do Porto, Fortaleza-CE
+              </p>
             </div>
           </div>
 
