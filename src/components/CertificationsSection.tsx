@@ -3,7 +3,8 @@ import { Award, CheckCircle, Shield } from "lucide-react";
 import nextOneLogo from "@/assets/nextone-logo-final.png";
 import dupontLogo from "@/assets/dupont-logo.png";
 import kevlarLogo from "@/assets/kevlar-logo.png";
-import abralinLogo from "@/assets/abralin-logo.png";
+import abralinLogo from "@/assets/abralin-logo-new.webp";
+import kevlarLogoNew from "@/assets/kevlar-logo-new.png";
 
 const CertificationsSection = () => {
   const { ref, isInView } = useInView();
@@ -23,13 +24,18 @@ const CertificationsSection = () => {
         <div className={`space-y-5 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {/* Abralin */}
           <div className="glass-card rounded-2xl p-8">
-            <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-3 antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
-              <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-              Associados à Abralin
-            </h3>
-            <p className="text-sm font-medium text-white ml-8 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
-              Associação Brasileira de Blindagem.
-            </p>
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-3 antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
+                  <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                  Associados à Abralin
+                </h3>
+                <p className="text-sm font-medium text-white ml-8 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>
+                  Associação Brasileira de Blindagem.
+                </p>
+              </div>
+              <img src={abralinLogo} alt="Logo Abralin" className="w-[140px] h-auto object-contain shrink-0" />
+            </div>
           </div>
 
           {/* NextOne Card */}
@@ -81,7 +87,7 @@ const CertificationsSection = () => {
                         <p className="text-base font-semibold text-white antialiased" style={{ lineHeight: '1.3', letterSpacing: '0.5px' }}>Qualidade e Segurança</p>
                         <p className="text-sm font-medium text-white mt-1 antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>A manta Kevlar® é conhecida por ser extremamente leve e resistente, proporcionando proteção superior contra disparos e impactos.</p>
                       </div>
-                      <img src={kevlarLogo} alt="Logo Kevlar" className="w-[140px] h-auto object-contain shrink-0" />
+                      <img src={kevlarLogoNew} alt="Logo Kevlar" className="w-[140px] h-auto object-contain shrink-0" />
                     </div>
                   </div>
                 </div>
