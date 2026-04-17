@@ -50,11 +50,11 @@ const BrandsSection = () => {
           </p>
         </div>
 
-        <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`flex flex-wrap justify-center gap-4 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="aspect-square rounded-2xl bg-[hsl(220_25%_8%)]/60 border border-white/5 p-6 flex flex-col items-center justify-center gap-4 group cursor-default transition-colors duration-300 hover:border-primary/30"
+              className="aspect-square rounded-2xl bg-[hsl(220_25%_8%)]/60 border border-white/5 p-6 flex flex-col items-center justify-center gap-4 group cursor-default transition-colors duration-300 hover:border-primary/30 w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.667rem)] md:w-[calc(25%-0.75rem)] lg:w-[calc(20%-0.8rem)]"
             >
               <img
                 src={brand.logo}
