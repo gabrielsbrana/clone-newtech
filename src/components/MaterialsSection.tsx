@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import { Shield, Layers, Gem, Eye, Wrench } from "lucide-react";
+import materialsBg from "@/assets/materials-bg.jpg";
 
 const materials = [
   { icon: Shield, name: "Aço Balístico", desc: "Proteção estrutural de alto impacto" },
@@ -13,8 +14,16 @@ const MaterialsSection = () => {
   const { ref, isInView } = useInView();
 
   return (
-    <section id="materiais" className="py-28 gradient-section" ref={ref}>
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section id="materiais" className="relative py-28 overflow-hidden" ref={ref}>
+      {/* Premium materials background */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${materialsBg})` }}
+      />
+      <div className="absolute inset-0 bg-background/85 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+
+      <div className="relative z-10 container mx-auto px-6 max-w-5xl">
         <div className={`text-center transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-5 text-white tracking-tight antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Materiais de <span className="text-gradient">Alta Tecnologia</span>
