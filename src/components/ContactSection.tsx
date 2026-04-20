@@ -1,12 +1,17 @@
 import { useInView } from "@/hooks/useInView";
 import { MapPin, Phone, MessageCircle, Instagram } from "lucide-react";
+import materialsBg from "@/assets/materials-bg.jpg";
 
 const ContactSection = () => {
   const { ref, isInView } = useInView();
 
   return (
-    <section id="contato" className="py-28 gradient-bg" ref={ref}>
-      <div className="container mx-auto px-6 max-w-4xl">
+    <section id="contato" className="relative py-28 overflow-hidden" ref={ref}>
+      {/* Background */}
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${materialsBg})` }} />
+      <div className="absolute inset-0 bg-background/85 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+      <div className="relative z-10 container mx-auto px-6 max-w-4xl">
         <div className={`text-center transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-14 text-white tracking-tight antialiased" style={{ lineHeight: '1.2', letterSpacing: '0.5px', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
             Entre em <span className="text-gradient">Contato</span>
