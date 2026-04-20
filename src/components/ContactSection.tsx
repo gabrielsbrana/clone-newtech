@@ -64,8 +64,8 @@ const ContactSection = () => {
             rel="noopener noreferrer"
             className="glass-card rounded-xl p-6 flex items-start gap-4"
           >
-            <div className="w-10 h-10 rounded-xl bg-[#E1306C]/10 border border-[#E1306C]/20 flex items-center justify-center shrink-0">
-              <Instagram className="w-5 h-5 text-[#E1306C]" />
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}>
+              <Instagram className="w-5 h-5 text-white" />
             </div>
             <div>
               <p className="font-semibold text-white text-sm mb-1 antialiased">Instagram</p>
