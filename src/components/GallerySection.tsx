@@ -2,6 +2,8 @@ import { useInView } from "@/hooks/useInView";
 import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import materialsBg from "@/assets/materials-bg.jpg";
+
 import galleryVolvo from "@/assets/gallery-volvo.jpg";
 import galleryVolvo2 from "@/assets/gallery-volvo-2.jpg";
 import galleryVolvo3 from "@/assets/gallery-volvo-3.jpg";
@@ -145,8 +147,12 @@ const GallerySection = () => {
   const { ref, isInView } = useInView();
 
   return (
-    <section id="projetos" className="py-28 gradient-section" ref={ref}>
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="projetos" className="relative py-28 overflow-hidden" ref={ref}>
+      {/* Background */}
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${materialsBg})` }} />
+      <div className="absolute inset-0 bg-background/85 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+      <div className="relative z-10 container mx-auto px-6 max-w-6xl">
         <div className={`text-center mb-14 transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 mb-8">
             <Camera className="w-7 h-7 text-primary" />
