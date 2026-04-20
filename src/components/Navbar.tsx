@@ -30,9 +30,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between h-18 py-3">
-        <a href="#hero" className="flex items-center">
-          <Logo className="h-10 w-auto" showSubtitle={false} />
-        </a>
+        <div />
+
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
