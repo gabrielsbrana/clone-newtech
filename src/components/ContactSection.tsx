@@ -39,7 +39,7 @@ const ContactSection = () => {
             </div>
             <div>
               <p className="font-semibold text-white text-sm mb-1 antialiased">Telefone</p>
-              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>(85) 3248-6633</p>
+              <p className="text-sm font-medium text-white antialiased" style={{ letterSpacing: '0.4px', lineHeight: '1.6' }}>(85) 98957-8441</p>
             </div>
           </div>
 
