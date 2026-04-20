@@ -29,7 +29,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 mt-auto container mx-auto px-6 pb-10 animate-fade-up-delay-3">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm text-muted-foreground/70">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm text-white">
           <span className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-primary/60" />
             Av. Vicente de Castro, 6270 - Cais do Porto, Fortaleza-CE
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <span className="hidden md:block text-border/50">|</span>
           <span className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-primary/60" />
-            (85) 3248-6633
+            (85) 98957-8441
           </span>
         </div>
       </div>
