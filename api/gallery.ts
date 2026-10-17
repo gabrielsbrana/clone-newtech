@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { list, put, head } from "@vercel/blob";
+import { list, put, head, BlobPreconditionFailedError } from "@vercel/blob";
 import { gallerySchema } from "../shared/gallery.js";
 import { authenticated, sameOrigin, secureHeaders } from "../server/auth.js";
 
@@ -38,8 +38,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
     return res.json({ ok: true, revision: saved.etag });
   } catch (error) {
-    const name = error instanceof Error ? error.name : "";
-    if (["BlobPreconditionFailedError", "BlobAlreadyExistsError"].includes(name)) return res.status(409).json({ error: "A galeria foi alterada em outra sessão. Recarregue antes de salvar." });
+    if (error instanceof BlobPreconditionFailedError || (error instanceof Error && /already exists|already exist/i.test(error.message))) return res.status(409).json({ error: "A galeria foi alterada em outra sessão. Recarregue antes de salvar." });
     console.error("Gallery operation failed", error instanceof Error ? error.message : "unknown");
     return res.status(503).json({ error: "Não foi possível acessar a galeria. Tente novamente." });
   }

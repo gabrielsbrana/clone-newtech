@@ -16,6 +16,8 @@ do navegador. A sessão usa cookie HttpOnly, Secure, SameSite=Strict e dura oito
 6. Clique em **Publicar alterações**. Os uploads, sozinhos, não alteram a galeria pública.
 7. Abra **Ver site** e confira o resultado. Use **Sair** ao terminar.
 
+As alterações podem levar até um minuto para aparecer por causa do cache do armazenamento.
+
 As exclusões só são publicadas ao salvar. Ao fechar a página com alterações pendentes,
 o navegador pede confirmação. Fotos removidas deixam de aparecer na galeria; os arquivos
 no Blob são mantidos para recuperação. O Blob é público e destina-se somente a fotos de divulgação.
