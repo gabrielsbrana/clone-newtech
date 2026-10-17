@@ -4,55 +4,10 @@ import { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import materialsBg from "@/assets/materials-bg.jpg";
 
-import galleryVolvo from "@/assets/gallery-volvo.jpg";
-import galleryVolvo2 from "@/assets/gallery-volvo-2.jpg";
-import galleryVolvo3 from "@/assets/gallery-volvo-3.jpg";
-import galleryVolvo4 from "@/assets/gallery-volvo-4.jpg";
-import galleryBmw from "@/assets/gallery-bmw.jpg";
-import galleryBmw2 from "@/assets/gallery-bmw-2.jpg";
-import galleryBmw3 from "@/assets/gallery-bmw-3.jpg";
-import galleryFortuner from "@/assets/gallery-fortuner.jpg";
-import gallerySw42 from "@/assets/gallery-sw4-2.jpg";
-import gallerySw43 from "@/assets/gallery-sw4-3.jpg";
-import galleryGclass from "@/assets/gallery-gclass.jpg";
-import galleryGclass2 from "@/assets/gallery-gclass-2.jpg";
-import galleryGclass3 from "@/assets/gallery-gclass-3.jpg";
-import galleryHaval from "@/assets/gallery-haval.jpg";
-import galleryHaval2 from "@/assets/gallery-haval-2.jpg";
-import galleryHaval3 from "@/assets/gallery-haval-3.jpg";
-import galleryDefender1 from "@/assets/gallery-defender-1.jpg";
-import galleryDefender2 from "@/assets/gallery-defender-2.jpg";
-import galleryDefender3 from "@/assets/gallery-defender-3.jpg";
-import galleryGle from "@/assets/gallery-gle.jpg";
+import type { GalleryImage } from "../../shared/gallery";
+import { useGallery } from "@/hooks/useGallery";
 
-const projects = [
-  {
-    caption: "Volvo XC90 Blindado Nível III-A",
-    images: [galleryVolvo, galleryVolvo2, galleryVolvo3, galleryVolvo4],
-  },
-  {
-    caption: "BMW X6 Blindado Nível III-A",
-    images: [galleryBmw, galleryBmw2, galleryBmw3],
-  },
-  {
-    caption: "Toyota SW4 Blindado Nível III-A",
-    images: [galleryFortuner, gallerySw42, gallerySw43],
-  },
-  {
-    caption: "Mercedes G-Class AMG Blindado Nível III-A",
-    images: [galleryGclass, galleryGclass2, galleryGclass3],
-  },
-  {
-    caption: "Haval H6 Blindado Nível III-A",
-    images: [galleryHaval, galleryHaval2, galleryHaval3],
-  },
-  {
-    caption: "Land Rover Defender Blindado Nível III-A",
-    images: [galleryDefender1, galleryDefender2, galleryDefender3],
-  },
-];
-
-const VehicleCarousel = ({ images, caption }: { images: string[]; caption: string }) => {
+const VehicleCarousel = ({ images, caption }: { images: GalleryImage[]; caption: string }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 25 });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -88,8 +43,8 @@ const VehicleCarousel = ({ images, caption }: { images: string[]; caption: strin
             {images.map((img, i) => (
               <div key={i} className="min-w-0 shrink-0 grow-0 basis-full h-full">
                 <img
-                  src={img}
-                  alt={`${caption} - Foto ${i + 1}`}
+                  src={img.url}
+                  alt={img.alt || `${caption} - Foto ${i + 1}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
@@ -145,6 +100,7 @@ const VehicleCarousel = ({ images, caption }: { images: string[]; caption: strin
 
 const GallerySection = () => {
   const { ref, isInView } = useInView();
+  const { vehicles } = useGallery();
 
   return (
     <section id="projetos" className="relative py-28 overflow-hidden" ref={ref}>
@@ -163,8 +119,8 @@ const GallerySection = () => {
         </div>
 
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 transition-all duration-1000 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {projects.map(({ images, caption }) => (
-            <VehicleCarousel key={caption} images={images} caption={caption} />
+          {vehicles.filter((vehicle) => vehicle.published).map(({ id, images, caption }) => (
+            <VehicleCarousel key={id} images={images} caption={caption} />
           ))}
         </div>
       </div>
